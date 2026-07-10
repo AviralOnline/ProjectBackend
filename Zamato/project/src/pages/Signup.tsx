@@ -20,7 +20,7 @@ function Signup({ setData , setIsloggedIn }: SignupProps) {
     const userData={username,mobile,password};
    try {
       const response = await fetch(
-        "http://localhost:8000/api/users/signup",
+        "https://projectbackend-production-84b5.up.railway.app/api/users/signup",
         {
           method: "POST",
           headers: {
